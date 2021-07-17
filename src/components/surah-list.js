@@ -1,0 +1,24 @@
+import React, {useState,useEffect} from 'react'
+import SurahItem from './surah-list-item'
+import { getAllSurah } from '../api/fetch-quran'
+
+export default function SurahList() {
+    const [ surah,setSurah ] = useState([])
+
+    useEffect( async () => {
+        const surah = await getAllSurah()
+        setSurah(surah)
+    },[])
+    
+    return (
+        surah.map( surah => {
+            return <SurahItem
+                key={surah.number}
+                number={surah.number}
+                surahName={surah.name.transliteration.id}
+                translation={surah.name.translation.id}
+                numberOfVerses={surah.numberOfVerses}
+            />
+        })
+    )
+}

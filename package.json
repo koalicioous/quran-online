@@ -15,7 +15,9 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "gatsby": "^3.9.1",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-react-helmet": "^4.9.0",
     "gatsby-plugin-sitemap": "^4.5.0",
     "react": "^17.0.1",

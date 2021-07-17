@@ -3,5 +3,17 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "quran-online",
   },
-  plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-sitemap"],
+  plugins: [
+  "gatsby-plugin-react-helmet",
+  "gatsby-plugin-sitemap",
+  {
+    resolve: `gatsby-plugin-google-fonts`,
+    options: {
+      fonts: [
+        `inter`,
+      ],
+      display: 'swap'
+    }
+  }
+  ],
 };
