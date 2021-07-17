@@ -5,9 +5,12 @@ import { getAllSurah } from '../api/fetch-quran'
 export default function SurahList() {
     const [ surah,setSurah ] = useState([])
 
-    useEffect( async () => {
-        const surah = await getAllSurah()
-        setSurah(surah)
+    useEffect(() => {
+        async function getSurah(){
+            const surah = await getAllSurah()
+            setSurah(surah)
+        }
+        getSurah()
     },[])
     
     return (

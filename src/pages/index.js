@@ -4,7 +4,6 @@ import SurahList from '../components/surah-list'
 
 export default function Index(){
   return (
-    <div className="min-h-screen bg-gray-100 pb-8">
       <AppLayout>
         <main className="mt-2" style={{zIndex:'98'}}>
           <section className="mx-2 sm:mx-0 px-4 py-4 bg-blue-500 text-white rounded-md">
@@ -17,6 +16,5 @@ export default function Index(){
           </section>
         </main>
       </AppLayout>
-    </div>
   )
 }
