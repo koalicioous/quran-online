@@ -1,10 +1,14 @@
 import React from 'react'
 import AppLayout from '../layout/app-layout'
 import SurahList from '../components/surah-list'
+import { Helmet } from 'react-helmet'
 
 export default function Index(){
   return (
       <AppLayout>
+        <Helmet>
+          <title>👨🏻‍💻 Ngaji Online ✨</title>
+        </Helmet>
         <main className="mt-2" style={{zIndex:'98'}}>
           <section className="mx-2 sm:mx-0 px-4 py-4 bg-blue-500 text-white rounded-md">
             <h3 className="text-sm">Assalamu'alaikum,</h3>
