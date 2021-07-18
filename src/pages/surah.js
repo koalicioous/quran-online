@@ -16,7 +16,7 @@ export default function Surah() {
         <AppLayout>
             <Router basepath='/surah'>
                 <Navigate path="/" />
-                <SurahContainer path=":slug" />
+                <SurahContainer path=":surahNumber" />
             </Router>
         </AppLayout>
     )

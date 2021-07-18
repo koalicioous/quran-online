@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
   "gatsby-plugin-react-helmet",
   "gatsby-plugin-sitemap",
+  "gatsby-plugin-fontawesome-css",
   {
     resolve: `gatsby-plugin-google-fonts`,
     options: {
@@ -19,5 +20,12 @@ module.exports = {
     resolve: `gatsby-plugin-create-client-paths`,
     options: { prefixes: [`/surah/*`] },
   },
+  `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
   ],
 };

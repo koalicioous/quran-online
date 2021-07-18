@@ -6,6 +6,7 @@ export default function SurahItem(props) {
     const {
         number = 0,
         surahName = 'Nama Surat',
+        arabicName = 'Arabic Name',
         translation = 'Translasi Surat',
         numberOfVerses = 'Jumlah'
     } = props
@@ -19,10 +20,10 @@ export default function SurahItem(props) {
                 <div className="ml-4 flex items-center justify-between flex-grow">
                     <div>
                         <p className="text-sm font-semibold text-gray-800">{surahName}</p>
-                        <p className="text-xs text-gray-500 mt-1">{translation}</p>
+                        <p className="text-xs text-gray-500 mt-1">{translation} — {numberOfVerses} Ayat</p>
                     </div>
                     <div>
-                        <p className="text-xs text-gray-600">{numberOfVerses} Ayat</p>
+                        <p className="text-lg text-gray-600 arab">{arabicName}</p>
                     </div>
                 </div>
             </Link>
