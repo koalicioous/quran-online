@@ -1,5 +1,5 @@
 import React, {useEffect,useState} from 'react'
-import {Link,navigate} from 'gatsby'
+import {Link} from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { getNextSurah,getPrevSurah } from '../api/fetch-quran'

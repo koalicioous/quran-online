@@ -14,7 +14,7 @@ export default function SurahItem(props) {
     return (
         <div className="py-4 bg-white border-b border-gray-200">
             <Link to={`/surah/${number}` } className="flex items-center px-8">
-                <div className="p-2 bg-blue-50 text-blue-400 rounded-full w-8 h-8 flex items-center justify-center text-xs font-bold">
+                <div className="p-2 bg-blue-50 text-blue-600 rounded-full w-8 h-8 flex items-center justify-center text-xs font-bold">
                     { number }
                 </div>
                 <div className="ml-4 flex items-center justify-between flex-grow">

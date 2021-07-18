@@ -26,7 +26,7 @@ const getSurahVerses = async (number) => {
 }
 
 const getNextSurah = async (number) => {
-    if (number == 114) return null
+    if (number === 114) return null
     const res = await axios.get(BASE_URL + `/surah/${number+1}`)
     .then( res => {
         return res.data.data
