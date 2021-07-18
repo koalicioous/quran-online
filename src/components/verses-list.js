@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import VerseItem from './verses-list-item'
+import { navigate } from 'gatsby'
+import { useLocation } from '@reach/router'
 
 export default function VerseList(props){
+    const location = useLocation()
     const {verses} = props
+
+    useEffect(() => {
+        if(location.hash.length > 0){
+            setTimeout(() => {
+                navigate(`${location.pathname}${location.hash}`)
+            }, 500);
+        }
+    },[])
+
     return (
         <>
         {
