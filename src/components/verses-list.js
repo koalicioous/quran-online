@@ -16,18 +16,21 @@ export default function VerseList(props){
     },[])
 
     return (
-        <>
-        {
-            verses.preBismillah && 
-            <VerseItem verse={verses.preBismillah} />
-        }
-        {
-            verses.verses.map((verse,index) => {
-                return (
-                 <VerseItem verse={verse} index={index} key={index} number={verses.number} />
-                )
-            })
-        }
-        </>
+        <div className="relative">
+            <div className="sticky absolute top-0 py-4 font-bold text-center" style={{zIndex:'100'}}>
+                ۞ {verses.name.transliteration.id} ۞
+            </div>
+            {
+                verses.preBismillah && 
+                <VerseItem verse={verses.preBismillah} />
+            }
+            {
+                verses.verses.map((verse,index) => {
+                    return (
+                     <VerseItem verse={verse} index={index} key={index} number={verses.number} />
+                    )
+                })
+            }
+        </div>
     )
 }
