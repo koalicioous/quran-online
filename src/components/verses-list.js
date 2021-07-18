@@ -3,7 +3,6 @@ import VerseItem from './verses-list-item'
 
 export default function VerseList(props){
     const {verses} = props
-    console.log(verses.preBismillah)
     return (
         <>
         {

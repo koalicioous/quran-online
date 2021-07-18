@@ -1,7 +1,8 @@
 import React, { useEffect,useState } from 'react'
-import { getSurahVerses, getSurahVersesText } from '../api/fetch-quran'
+import { getSurahVerses } from '../api/fetch-quran'
 import VerseList from './verses-list'
 import { Helmet } from 'react-helmet'
+import SurahNavigation from './surah-navigation'
 
 const Surah = {
     name: {
@@ -34,6 +35,7 @@ export default function SurahContainer(props){
             </Helmet>
             <section>
                 <VerseList verses={surah} />
+                <SurahNavigation number={surah.number}/>
             </section>
         </>
     )
