@@ -17,7 +17,7 @@ export default function VerseList(props){
 
     return (
         <div className="relative">
-            <div className="sticky absolute top-0 py-4 font-bold text-center" style={{zIndex:'100'}}>
+            <div className="sticky absolute top-0 py-4 font-bold text-right sm:text-center pr-4 sm:pr-0" style={{zIndex:'100'}}>
                 ۞ {verses.name.transliteration.id} ۞
             </div>
             {
