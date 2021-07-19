@@ -27,7 +27,7 @@ export default function VerseList(props){
             {
                 verses.verses.map((verse,index) => {
                     return (
-                     <VerseItem verse={verse} index={index} key={index} number={verses.number} />
+                     <VerseItem verse={verse} index={index} key={index} number={verses.number} surahName={verses.name.transliteration.id} />
                     )
                 })
             }

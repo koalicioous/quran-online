@@ -29,13 +29,13 @@ export default function Index(){
             <h1 className="text-lg font-bold">Ahlul Jannah, Insya Allah! ✨</h1>
           </section>
           <section className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 mt-2 mx-2 sm:mx-0">
-            <button onClick={lastVerse} className="py-3 bg-white rounded-lg shadow-lg flex items-center justify-center text-sm border">
+            <button onClick={lastVerse} className="py-3 bg-white rounded-lg shadow-lg flex items-center justify-center text-sm border border-gray-100">
               <FontAwesomeIcon icon={faBookmark} className="text-blue-500" />
               <span className="ml-2 text-blue-900">
                 Ayat terakhir dibaca
               </span>
             </button>
-            <button className="py-3 bgwhite rounded-lg flex items-center justify-center text-sm bg-gray-300 text-gray-500">
+            <button className="py-3 bgwhite rounded-lg flex items-center justify-center text-sm bg-gray-200 text-gray-500">
               <FontAwesomeIcon icon={faBookOpen} />
               <span className="ml-2">
                 Kajian Quran (Segera)
@@ -43,7 +43,7 @@ export default function Index(){
             </button>
           </section>
           <section className="mt-2 bg-white rounded-md shadow-lg">
-            <h1 className="font-semibold py-2 px-8 bg-blue-100 rounded-t-md text-gray-700">Daftar Surat</h1>
+            <h1 className="font-semibold py-2 px-8 bg-blue-400 rounded-t-md text-white">Daftar Surat</h1>
             <SurahList />
           </section>
           <section className="bg-white p-4 mt-3 rounded-md">

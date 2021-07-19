@@ -22,6 +22,7 @@ export default function SurahList() {
                 translation={surah.name.translation.id}
                 numberOfVerses={surah.numberOfVerses}
                 arabicName={surah.name.short}
+                tafsir={surah.tafsir.id}
             />
         })
     )

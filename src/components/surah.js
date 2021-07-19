@@ -10,7 +10,9 @@ const Surah = {
             id: ''
         }
     },
-    tafsir: '',
+    tafsir: {
+        id:''
+    },
     verses: []
 }
 
@@ -31,12 +33,16 @@ export default function SurahContainer(props){
         <>
             <Helmet>
                 <title>{surah.name.transliteration.id} — Ngaji Online</title>
-                <meta name="description" content={surah.tafsir.id} />
+                <meta name="description" content={surah.tafsir.id + ' ' + surah.tafsir.id} />
             </Helmet>
             <section>
                 <VerseList verses={surah} />
-                <SurahNavigation number={surah.number}/>
             </section>
+            <section className="py-3 mt-3 px-2 sm:px-4 bg-gray-100">
+                <h1 className="font-bold text-gray-700">Tafsir Surah {surah.name.transliteration.id }</h1>
+                <p className="text-xs mt-2 text-gray-400">{surah.tafsir.id}</p>
+            </section>
+            <SurahNavigation number={surah.number}/>
         </>
     )
 }
