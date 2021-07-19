@@ -38,8 +38,8 @@ export default function SurahContainer(props){
             <section>
                 <VerseList verses={surah} />
             </section>
-            <section className="py-3 mt-3 px-2 sm:px-4 bg-gray-100">
-                <h1 className="font-bold text-gray-700">Tafsir Surah {surah.name.transliteration.id }</h1>
+            <section className="py-3 mt-3 px-4 bg-gray-100 whitespace-pre-line">
+                <h1 className="font-bold text-gray-700">Tafsir Ringkas Surah {surah.name.transliteration.id }</h1>
                 <p className="text-xs mt-2 text-gray-400">{surah.tafsir.id}</p>
             </section>
             <SurahNavigation number={surah.number}/>

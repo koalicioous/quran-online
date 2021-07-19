@@ -84,9 +84,15 @@ export default function VerseItem(props){
             </div>
             {
                 isTafsirOpen &&
-                <div className="bg-gray-100 py-3 px-4 text-xs whitespace-pre-line mt-2">
+                <div className="bg-gray-100 py-3 px-4 text-xs whitespace-pre-line text-justify mt-2">
                     <h1 className="font-bold text-gray-500">Tafsir surat {surahName} ayat {verse.number.inSurah}</h1>
-                    <p className="mt-2 text-gray-500">{tafsirLong ? verse.tafsir.id.long : verse.tafsir.id.short}</p>
+                    <p className="mt-2 text-gray-500">{verse.tafsir.id.short}</p>
+                    {
+                        tafsirLong &&
+                        <p className="mt-2 text-gray-500">
+                            {verse.tafsir.id.long}
+                        </p>
+                    }
                     <button className="mt-3 flex items-center text-gray-500 bg-gray-200 px-3 py-1 rounded-full" onClick={() => setTafsirLong(!tafsirLong)}>
                         <span className="mr-2">
                             {tafsirLong ? 'Versi pendek' : 'Baca versi panjang'}

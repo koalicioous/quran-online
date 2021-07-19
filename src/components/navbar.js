@@ -17,7 +17,7 @@ export default function Navbar(){
                 </Link>
             }
             <span className={location.pathname === '/' ? 'text-md font-bold text-gray-600' : 'text-xs font-bold text-gray-6pp'}>
-                {location.pathname === '/' ? 'Al-Quran Karim' : 'Daftar Surat'}
+                {location.pathname === '/' ? '💫  Al-Quran Karim' : 'Daftar Surat'}
             </span>
         </nav>
     )
