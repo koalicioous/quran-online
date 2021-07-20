@@ -29,20 +29,20 @@ export default function Index(){
             <h3 className="text-sm">Assalamu'alaikum,</h3>
             <h1 className="text-lg font-bold">Ahlul Jannah, Insya Allah! ✨</h1>
           </section>
-          <section className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 mt-2 mx-2 sm:mx-0">
+          <section className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4 mt-2 mx-2 sm:mx-0">
             <button onClick={lastVerse} className="py-3 bg-white rounded-lg shadow-lg flex items-center justify-center text-sm border border-gray-100">
               <FontAwesomeIcon icon={faBookmark} className="text-blue-500" />
               <span className="ml-2 text-blue-900">
-                Ayat terakhir dibaca
+                Terakhir dibaca
               </span>
             </button>
             <a href="https://calendly.com/surya-negara/tahsin-qiroah-with-ulil-albab" className="py-3 bg-white rounded-lg flex items-center justify-center text-sm border border-gray-100 shadow-lg" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faLeanpub} className="text-blue-500" />
               <span className="ml-2 text-blue-900">
-                Tahsin Qiro'ah Gratis
+                Tahsin Qiro'ah <span className="font-semibold" style={{fontSize:'10px'}}>Gratis!</span>
               </span>
             </a>
-            <button className="py-3 rounded-lg flex items-center justify-center text-sm bg-gray-200 text-gray-500">
+            <button className="py-3 col-span-2 sm:col-span-1 rounded-lg flex items-center justify-center text-sm bg-gray-200 text-gray-500">
               <FontAwesomeIcon icon={faBookOpen} />
               <span className="ml-2">
                 Kajian Quran (Segera)

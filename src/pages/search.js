@@ -18,7 +18,7 @@ export default function Search(){
                 <Link to="/" className="py-3 px-4 -my-3 -ml-4">
                     <FontAwesomeIcon icon={faArrowLeft} />
                 </Link>
-                <input className="px-3 py-2 text-sm flex-grow bg-gray-100 rounded-md focus:bg-gray-50 transition-all" placeholder="Coba ketik Al-Baqarah" onChange={searchChangeHandle} />
+                <input className="px-3 py-2 flex-grow bg-gray-100 rounded-md focus:bg-gray-50 transition-all" placeholder="Coba ketik Al-Baqarah" onChange={searchChangeHandle} />
             </div>
             <SurahList searchTerm={term} />
         </section>
