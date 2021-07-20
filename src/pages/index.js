@@ -6,6 +6,7 @@ import SurahList from '../components/surah-list'
 import { Helmet } from 'react-helmet'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark, faBookOpen, faCode, faServer } from '@fortawesome/free-solid-svg-icons'
+import { faLeanpub } from '@fortawesome/free-brands-svg-icons'
 
 export default function Index(){
 
@@ -28,14 +29,20 @@ export default function Index(){
             <h3 className="text-sm">Assalamu'alaikum,</h3>
             <h1 className="text-lg font-bold">Ahlul Jannah, Insya Allah! ✨</h1>
           </section>
-          <section className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 mt-2 mx-2 sm:mx-0">
+          <section className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 mt-2 mx-2 sm:mx-0">
             <button onClick={lastVerse} className="py-3 bg-white rounded-lg shadow-lg flex items-center justify-center text-sm border border-gray-100">
               <FontAwesomeIcon icon={faBookmark} className="text-blue-500" />
               <span className="ml-2 text-blue-900">
                 Ayat terakhir dibaca
               </span>
             </button>
-            <button className="py-3 bgwhite rounded-lg flex items-center justify-center text-sm bg-gray-200 text-gray-500">
+            <a href="https://calendly.com/surya-negara/tahsin-qiroah-with-ulil-albab" className="py-3 bg-white rounded-lg flex items-center justify-center text-sm border border-gray-100 text-green-600 shadow-lg" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faLeanpub} />
+              <span className="ml-2">
+                Tahsin Qiro'ah Gratis
+              </span>
+            </a>
+            <button className="py-3 rounded-lg flex items-center justify-center text-sm bg-gray-200 text-gray-500">
               <FontAwesomeIcon icon={faBookOpen} />
               <span className="ml-2">
                 Kajian Quran (Segera)
