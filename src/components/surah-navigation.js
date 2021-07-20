@@ -28,7 +28,7 @@ export default function SurahNavigation(props){
 
     return (
         <div className="px-4 w-full sticky bottom-4 mt-3">
-            <div className="bg-white py-3 rounded-full shadow-lg grid grid-cols-2">
+            <div className="backdrop-filter backdrop-blur border py-3 rounded-full shadow-lg grid grid-cols-2">
                <Link to={ !prev ? `/surah/${props.number}` : `/surah/${props.number - 1}` } className={"px-4 flex items-center justify-between"}>
                     <FontAwesomeIcon icon={faArrowLeft} className={ !prev ? 'text-gray-300' : 'text-blue-500' } />
                     <span className={"text-xs sm:text-sm flex-grow text-center " + (!prev ? 'text-gray-400' : 'text-gray-800') }>{!prev ? 'Tidak tersedia' : prev}</span>

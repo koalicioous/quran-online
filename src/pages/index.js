@@ -43,7 +43,7 @@ export default function Index(){
             </button>
           </section>
           <section className="mt-2 bg-white rounded-md shadow-lg">
-            <h1 className="font-semibold py-2 px-8 bg-blue-400 rounded-t-md text-white">Daftar Surat</h1>
+            <h1 className="font-semibold py-2 px-8 bg-gradient-to-r from-blue-400 to-blue-500  rounded-t-md text-white">Daftar Surat</h1>
             <SurahList />
           </section>
           <section className="bg-white p-4 mt-3 rounded-md">
