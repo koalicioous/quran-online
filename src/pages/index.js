@@ -36,9 +36,9 @@ export default function Index(){
                 Ayat terakhir dibaca
               </span>
             </button>
-            <a href="https://calendly.com/surya-negara/tahsin-qiroah-with-ulil-albab" className="py-3 bg-white rounded-lg flex items-center justify-center text-sm border border-gray-100 text-green-600 shadow-lg" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faLeanpub} />
-              <span className="ml-2">
+            <a href="https://calendly.com/surya-negara/tahsin-qiroah-with-ulil-albab" className="py-3 bg-white rounded-lg flex items-center justify-center text-sm border border-gray-100 shadow-lg" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faLeanpub} className="text-blue-500" />
+              <span className="ml-2 text-blue-900">
                 Tahsin Qiro'ah Gratis
               </span>
             </a>
