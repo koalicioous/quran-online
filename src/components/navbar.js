@@ -9,7 +9,7 @@ export default function Navbar(){
     const [location] = useState(useLocation())
 
     return (
-        <nav className="px-8 py-4 shadow-lg sticky top-0 flex items-center justify-between backdrop-filter backdrop-blur" style={{zIndex:'99'}}>
+        <nav className="px-8 py-4 shadow-lg sticky top-0 flex items-center justify-between backdrop-filter backdrop-blur border-b border-opacity-25" style={{zIndex:'99'}}>
             <div>
                 {
                     location.pathname === '/' &&

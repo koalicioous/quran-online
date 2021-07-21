@@ -84,7 +84,7 @@ export default function VerseItem(props){
             </div>
             {
                 isTafsirOpen &&
-                <div className="bg-gray-100 py-3 px-4 text-xs whitespace-pre-line text-justify mt-2">
+                <div className="bg-gray-100 py-3 px-4 text-xs whitespace-pre-line text-justify mt-2 rounded-lg">
                     <h1 className="font-bold text-gray-500">Tafsir surat {surahName} ayat {verse.number.inSurah}</h1>
                     <p className="mt-2 text-gray-500">{verse.tafsir.id.short}</p>
                     {

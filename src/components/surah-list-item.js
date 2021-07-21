@@ -26,7 +26,7 @@ export default function SurahItem(props) {
             <Link to={`/surah/${number}` } className="flex items-center px-8">
                 {
                     atIndex &&
-                    <div className="p-2 bg-gray-50 text-blue-500 rounded-full w-8 h-8 flex items-center justify-center text-xs font-bold">
+                    <div className="p-2 bg-gray-50 text-blue-500 rounded-full shadow bg-opacity-50 backdrop-filter backdrop-blur w-8 h-8 flex items-center justify-center text-xs font-bold">
                         { number }
                     </div>
                 }

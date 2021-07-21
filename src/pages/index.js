@@ -25,29 +25,29 @@ export default function Index(){
           <meta name="description" content="Ngaji Online adalah sebuah website untuk membaca Al-Qur'an yang sederhana dan mudah digunakan. Mari senantiasa semangat menambah pahala!" />
         </Helmet>
         <main className="mt-2 relative" style={{zIndex:'98'}}>
-          <section className="mx-2 sm:mx-0 px-4 py-4 bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-md">
+          <section className="mx-2 sm:mx-0 px-4 py-4 bg-gradient-to-r from-blue-500 to-blue-300 text-white rounded-md">
             <h3 className="text-sm">Assalamu'alaikum,</h3>
             <h1 className="text-lg font-bold">Ahlul Jannah, Insya Allah! ✨</h1>
-          </section>
-          <section className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4 mt-2 mx-2 sm:mx-0">
-            <button onClick={lastVerse} className="py-3 bg-white rounded-lg shadow-lg flex items-center justify-center text-sm border border-gray-100">
-              <FontAwesomeIcon icon={faBookmark} className="text-blue-500" />
-              <span className="ml-2 text-blue-900">
-                Terakhir dibaca
-              </span>
-            </button>
-            <a href="https://calendly.com/surya-negara/tahsin-qiroah-with-ulil-albab" className="py-3 bg-white rounded-lg flex items-center justify-center text-sm border border-gray-100 shadow-lg" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faLeanpub} className="text-blue-500" />
-              <span className="ml-2 text-blue-900">
-                Tahsin Qiro'ah <span className="font-semibold" style={{fontSize:'10px'}}>Gratis!</span>
-              </span>
-            </a>
-            <button className="py-3 col-span-2 sm:col-span-1 rounded-lg flex items-center justify-center text-sm bg-gray-200 text-gray-500">
-              <FontAwesomeIcon icon={faBookOpen} />
-              <span className="ml-2">
-                Kajian Quran (Segera)
-              </span>
-            </button>
+            <section className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4 mt-2 -mx-2 sm:mx-0">
+              <button onClick={lastVerse} className="py-3 bg-gradient-to-r from-blue-200 border-opacity-50 rounded-lg shadow-xl hover:shadow-2xl flex items-center justify-center text-sm border border-gray-200 bg-gradient-opacity-10 backdrop-filter backdrop-blur">
+                <FontAwesomeIcon icon={faBookmark} className="text-blue-500" />
+                <span className="ml-2 text-blue-900">
+                  Terakhir dibaca
+                </span>
+              </button>
+              <a href="https://calendly.com/surya-negara/tahsin-qiroah-with-ulil-albab" className="py-3 bg-gradient-to-r from-blue-200 border-opacity-50 rounded-lg flex items-center justify-center text-sm border bg-opacity-50 backdrop-filter backdrop-blur border-gray-50 shadow-lg" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faLeanpub} className="text-blue-500" />
+                <span className="ml-2 text-blue-900">
+                  Tahsin Qiro'ah
+                </span>
+              </a>
+              <button className="py-3 col-span-2 sm:col-span-1 rounded-lg flex items-center justify-center text-sm bg-opacity-40 bg-gray-200 text-gray-500">
+                <FontAwesomeIcon icon={faBookOpen} />
+                <span className="ml-2">
+                  Kajian Quran (Segera)
+                </span>
+              </button>
+            </section>
           </section>
           <section className="mt-2 bg-white rounded-md shadow-lg">
             <h1 className="font-semibold py-2 px-8 bg-gradient-to-r from-blue-400 to-blue-500  rounded-t-md text-white">Daftar Surat</h1>
